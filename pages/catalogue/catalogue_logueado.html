@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="css-cambia" rel="stylesheet" href="../../style.css">
+    <title>Catalogo</title>
+</head>
+<body>
+    <header>
+        <nav class="catalogue_bar">
+            <div>
+                <a href="../Index.html">
+                    <img class="logo"></img>
+                </a>
+                <h1>NotTooLate</h1>
+                <div class="catalogue_log_in">
+                    <a href="../user/userInfo.html">Configuración</a>
+                    <a href="../catalogue/catalogue.html">Cerrar Sesión</a>
+                    <label class="cambiar">
+                        <input id="cambiar-modo" type="checkbox">
+                        <span class="slider">Modo dia</span>
+                    </label>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <ul class="elements_catalogue">
+                <li>League of Legends</li>
+                <li>Team Fight Tactics</li>
+            </ul>
+            <div class="container_content">
+                <section class="products">
+                    <div>
+                        <img src="../../images/recompensa.jpg" alt="">
+                        <p>Hola</p>
+                        <button><a href="../products/producto.html">Reclamar</a></button>
+                    </div>
+                    <div>
+                        <img src="../../images/recompensa.jpg" alt="">
+                        <p>Hola</p>
+                        <button><a href="../products/producto.html">Reclamar</a></button>
+                    </div>
+                    <div>
+                        <img src="../../images/recompensa.jpg" alt="">
+                        <p>Hola</p>
+                        <button><a href="../products/producto.html">Reclamar</a></button>
+                    </div>
+                    <div>
+                        <img src="../../images/recompensa.jpg" alt="">
+                        <p>Hola</p>
+                        <button><a href="../products/producto.html">Reclamar</a></button>
+                    </div>
+                    <div>
+                        <img src="../../images/recompensa.jpg" alt="">
+                        <p>Hola</p>
+                        <button><a href="../products/producto.html">Reclamar</a></button>
+                    </div>
+                    <div>
+                        <img src="../../images/recompensa.jpg" alt="">
+                        <p>Hola</p>
+                        <button><a href="../products/producto.html">Reclamar</a></button>
+                    </div>
+
+                </section>
+                <div class="promo"><h2>Articulos en Promoción</h2></div>
+                <div class="container_content">
+                  <section class="products_promo">
+                    <div>
+                        <img src="../../images/recompensa.jpg" alt="">
+                        <p>Hola</p>
+                        <button><a href="../products/producto.html">Reclamar</a></button>
+                    </div>
+                    <div>
+                        <img src="../../images/recompensa.jpg" alt="">
+                        <p>Hola</p>
+                        <button><a href="../products/producto.html">Reclamar</a></button>
+                    </div>
+                    <div>
+                        <img src="../../images/recompensa.jpg" alt="">
+                        <p>Hola</p>
+                        <button><a href="../products/producto.html">Reclamar</a></button>
+                    </div>
+                    <div>
+                        <img src="../../images/recompensa.jpg" alt="">
+                        <p>Hola</p>
+                        <button><a href="../products/producto.html">Reclamar</a></button>
+                    </div>
+                    <div>
+                        <img src="../../images/recompensa.jpg" alt="">
+                        <p>Hola</p>
+                        <button><a href="../products/producto.html">Reclamar</a></button>
+                    </div>
+                    <div>
+                        <img src="../../images/recompensa.jpg" alt="">
+                        <p>Hola</p>
+                        <button><a href="../products/producto.html">Reclamar</a></button>
+                    </div>
+                    <div>
+                        <img src="../../images/recompensa.jpg" alt="">
+                        <p>Hola</p>
+                        <button><a href="../products/producto.html">Reclamar</a></button>
+                    </div>
+                    <div>
+                        <img src="../../images/recompensa.jpg" alt="">
+                        <p>Hola</p>
+                        <button><a href="../products/producto.html">Reclamar</a></button>
+                    </div>
+                  </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-section">
+          <h3>Redes Sociales</h3>
+        </div>
+        <div class="footer-section">
+          <h3>Contacto</h3>
+        </div>
+        <div class="footer-section">
+          <h3>Sobre nosotros</h3>
+        </div>
+      </footer>
+      <script>
+        const cambiar = document.getElementById("cambiar-modo");
+        const link = document.getElementById("css-cambia");
+        cambiar.addEventListener('change',function(){
+            if(cambiar.checked){
+                link.href = "../../style_dia.css";
+            }
+            else{
+                link.href = "../../style.css"
+                location.reload();
+            }
+        });
+      </script>
+</body>
+</html>

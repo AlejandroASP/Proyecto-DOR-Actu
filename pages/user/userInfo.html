@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="css-cambia" rel="stylesheet" href="../../style.css">
+    <title>Catalogo</title>
+</head>
+<body>
+    <header>
+        <nav class="catalogue_bar">
+            <div>
+                <a href="landing.html">
+                    <img class="logo"></img>
+                </a>
+                <h1>NotTooLate</h1>
+                <div class="catalogue_log_in">
+                    <a href="../catalogue/catalogue_logueado.html">Volver al Catalogo</a>
+                    <label class="cambiar">
+                        <input id="cambiar-modo" type="checkbox">
+                        <span class="slider">Modo dia</span>
+                    </label>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container_perfil">
+            <div class="user_config">
+                <h1>Configuración de Usuario</h1>
+            </div>
+            <div class="container_config">
+                <div class="container_passw">
+                    <div class="passwcConfig">
+                        <h2>Cambiar contraseña</h2>
+                        <input type="text" class="passw"><button>Cambiar</button>
+                    </div>
+                </div>
+                <div class="container_email">
+                    <h2>Cambiar email</h2>
+                    <input type="mail" class="passw" pattern="\w+([\.\-]?\w+)+@+\w+([\.\-]+\w+)+" required>
+                    <button>Cambiar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-section">
+          <h3>Redes Sociales</h3>
+        </div>
+        <div class="footer-section">
+          <h3>Contacto</h3>
+        </div>
+        <div class="footer-section">
+          <h3>Sobre nosotros</h3>
+        </div>
+      </footer>
+      <script>
+        const cambiar = document.getElementById("cambiar-modo");
+        const link = document.getElementById("css-cambia");
+        cambiar.addEventListener('change',function(){
+            if(cambiar.checked){
+                link.href = "../../style_dia.css";
+            }
+            else{
+                link.href = "../../style.css"
+                location.reload();
+            }
+        });
+      </script>
+</body>
+</html>

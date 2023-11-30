@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="css-cambia" rel="stylesheet" href="../../style.css">
+    <title>Catalogo</title>
+</head>
+<body>
+    <header>
+        <nav class="catalogue_bar">
+            <div>
+                <a href="../Index.html">
+                    <img class="logo"></img>
+                </a>
+                <h1>NotTooLate</h1>
+                <div class="catalogue_log_in">
+                    <a href="../user/login.html">Registrate</a>
+                    <a href="../catalogue/catalogue_logueado.html">Inicia Sesión</a>
+                    <label class="cambiar">
+                        <input id="cambiar-modo" type="checkbox">
+                        <span class="slider">Modo dia</span>
+                    </label>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <ul class="elements_catalogue">
+                <li>League of Legends</li>
+                <li>Team Fight Tactics</li>
+            </ul>
+            <div class="container_content">
+                <div class="container_img_prod">
+                    <img src="../../images/recompensa.jpg">
+                    <div class="text_product">
+                        <p>Titulo Producto</p>
+                        <p>Descripción del producto</p>
+                        <p class="code"><a href="#">Obtener código</a></p>
+                        <div class="container_rating">
+                            <p class="clasificacion">
+                              <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                              --><label for="radio1">★</label><!--
+                              --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+                              --><label for="radio2">★</label><!--
+                              --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                              --><label for="radio3">★</label><!--
+                              --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                              --><label for="radio4">★</label><!--
+                              --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                              --><label for="radio5">★</label>
+                            </p>
+                          </div>
+                    </div>
+                </div>
+                <div class="caja_tabla">
+                    <table>
+                        <tr>
+                            <td>Plataforma</td>
+                            <td>hola</td>
+                            <td>hola</td>
+                        </tr>
+                        <tr>
+                            <td>Fecha</td>
+                            <td>hola</td>
+                            <td>hola</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="other_products">
+                    <h1>Otros Productos</h1>
+                    <img src="../../images/recompensa.jpg" alt="">
+                    <div class="comentarios">
+                        <h1>Comentarios</h1>
+                        <p>Usuario: soy un comentario</p>
+                    </div>
+                    
+                    <form action="" class="formulario">
+                        <h1>Formulario de dudas</h1>
+                        <textarea name="" id="" cols="10" rows="10"></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+
+            </div>
+          </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-section">
+          <h3>Redes Sociales</h3>
+        </div>
+        <div class="footer-section">
+          <h3>Contacto</h3>
+        </div>
+        <div class="footer-section">
+          <h3>Sobre nosotros</h3>
+        </div>
+      </footer>
+      <script>
+        const cambiar = document.getElementById("cambiar-modo");
+        const link = document.getElementById("css-cambia");
+        cambiar.addEventListener('change',function(){
+            if(cambiar.checked){
+                link.href = "../../style_dia.css";
+            }
+            else{
+                link.href = "../../style.css"
+                location.reload();
+            }
+        });
+      </script>
+</body>
+</html>
