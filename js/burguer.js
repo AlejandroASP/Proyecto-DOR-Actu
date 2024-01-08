@@ -1,24 +1,18 @@
-const navigation = document.getElementById("nav");
-const menu = document.getElementById("menu");
+(() => {
+  const hamburger = document.getElementById("hamburger");
+  const menu = document.getElementById("overlay");
+  let closed = true;
 
-menu.addEventListener("click", () => {
-  // The navigation.children.length means the following :-
-  // The children inside a parent are basically an array of elements; So, here I'm finding the length of the array aka how many children are inside the nav bar.
-  //   Yup That's all.
-  navigation.style.setProperty("--childenNumber", navigation.children.length);
+  const change = () => {
+    if (closed) {
+      hamburger.classList.add("open");
+      menu.classList.add("menu");
+    } else {
+      hamburger.classList.remove("open");
+      menu.classList.remove("menu");
+    }
+    closed = !closed;
+  };
 
-  //    Casually Toggling Classes to make them animate on click
-  //   Regular stuff ;)
-  navigation.classList.toggle("active");
-  menu.classList.toggle("active");
-});
-var counter = 2;
-
-setInterval(function(){
-  document.getElementById('btn' + counter).click();
-  counter++;
-  // console.log(counter);
-  if (counter == 4){
-    counter = 1;
-  }
-}, 5000);
+  hamburger.addEventListener("click", change);
+})();
