@@ -49,12 +49,6 @@ Tamaño Teléfono
         margin-left: -21em;
     }
     
-    .catalogue_log_in{
-        width: 5em;
-        margin-left: 14em;
-        margin-top: -3em;
-        height: 5em;
-    }
     .catalogue_log_in  a {
         text-decoration: none;
         display: inline-block;
@@ -110,49 +104,8 @@ Tamaño Teléfono
         margin-left: -1em;
         width: 49em;
     }
-    .container_img_prod {
-        width: 51.2%;
-        display: flex;
-    }
-    .container_img_prod img{
-        width: 100%;
-        height: 100%;
-    }
-    .text_product {
-        width: 95%;
-        height:73.8%;
-        background-color: white;
-        text-align: center;
-    }
-    .text_product .code{
-        margin-top: 18%;
-        margin-top: 30%;
-    }
-    .text_product .code a{
-        text-decoration: none;
-        width: 50%;
-        color: red;
-    }
-    .container_rating {
-        margin-left: -71%;
-        margin-top: 10%;
-    }
-    input[type="radio"] {
-        display: none;
-    }
-    label {
-        color: grey;
-    }
-    .clasificacion {
-        direction:rtl;
-        unicode-bidi: bidi-override;
-        margin-left: -20.4%;
-        background-color: white;
-        height: 1.5em;
-        width: 12.8em;
-        margin-top: -4em;
-        text-align: center;
-    }
+
+
     label:hover,
     label:hover ~ label {
         color: orange;

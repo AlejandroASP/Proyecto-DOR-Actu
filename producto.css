@@ -1,0 +1,73 @@
+/*https://codepen.io/fagnanm/pen/RpWNyb*/
+.logotype{
+    font-family: twitchy-tv;
+    color: white;
+    text-shadow: 5px 5px 1px #6441A5;
+    text-decoration: none;
+    display: flex;
+    margin-left: -30%;
+}
+.mode{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    margin: auto;
+    margin-left: 70%;
+}
+.mode span{
+    font-size: small;
+}
+.cont{
+    display: flex;
+    border: solid 2px black;
+    height: 20%;
+}
+.container_img_prod {
+    width: 51.2%;
+    display: flex;
+}
+.container_img_prod img{
+    width: 120%;
+    height: 100%;
+}
+.text_product {
+    width: 50%;
+    height:100%;
+    background-color: white;
+    text-align: center;
+    margin-left: 9%;
+}
+.text_product p{
+    margin-top: 20%;
+}
+.text_product .code{
+    margin-top: 25%;
+}
+
+.text_product .code a{
+    text-decoration: none;
+    color: red;
+}
+
+.container_rating {
+    height: 10px;
+    width: 300px;
+    display: flex;
+    align-items:center;
+    margin-left: -118%;
+    margin-top: 80%;
+}
+input[type="radio"] {
+    display: none;
+}
+label {
+    color: grey;
+    font-size:large;
+}
+.clasificacion {
+    direction:rtl;
+    unicode-bidi: bidi-override;
+    background-color: white;
+    text-align: center;
+    width: 230px;
+}
