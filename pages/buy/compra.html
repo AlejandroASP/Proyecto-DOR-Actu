@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="css-cambia" rel="stylesheet" href="../../style.css">
+    <link id="css-cambia" rel="stylesheet" href="../../tablet.css">
+    <link id="css-cambia" rel="stylesheet" href="../../desktop.css">
+    <title>Catalogo</title>
+</head>
+<body>
+    <header>
+        <header>
+            <nav>
+              <div id="overlay">
+                <ul>
+                    <li><a href="#">Inicia Sesión</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Services</a></li>
+                </ul>
+              </div>
+                <div class="nav">
+                  <a href="../../index.html" class="logo">NotTooLate</a>
+                  <div id="cart">🛒
+                    <div id="cart-content" style="display: none;">
+                        <ul class="product-list">
+                            <li>
+                                Producto 1
+                                <p>Precio: 23</p>
+                            </li>
+                            <li>Producto 2</li>
+                            <li>Producto 3</li>
+                        </ul>
+                    </div>
+                </div>                
+                  <div id="hamburger">
+                    <div></div>
+                  </div>
+                </div>
+            </nav>
+        </header>
+    <main>
+        <div class="container">
+            <ul class="elements_catalogue">
+                <li>League of Legends</li>
+                <li>Team Fight Tactics</li>
+            </ul>
+            <div class="container_content">
+                <section class="products">
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-section">
+          <h3>Redes Sociales</h3>
+        </div>
+        <div class="footer-section">
+          <h3>Contacto</h3>
+        </div>
+        <div class="footer-section">
+          <h3>Sobre nosotros</h3>
+        </div>
+      </footer>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="../../js/burguer.js"></script>
+      <script>
+        const cambiar = document.getElementById("cambiar-modo");
+        const link = document.getElementById("css-cambia");
+        cambiar.addEventListener('change',function(){
+            if(cambiar.checked){
+                link.href = "../../style_dia.css";
+            }
+            else{
+                link.href = "../../style.css"
+                location.reload();
+            }
+        });
+      </script>
+</body>
+</html>

@@ -16,3 +16,14 @@
 
   hamburger.addEventListener("click", change);
 })();
+
+$(document).ready(function(){
+  $('#cart').click(function(){
+      $('#cart-content').toggle(); // Esto mostrará u ocultará el contenido del carrito
+  });
+
+  // Detiene la propagación del evento de clic cuando se hace clic en el menú desplegable
+  $('#quantity').click(function(event){
+      event.stopPropagation();
+  });
+});

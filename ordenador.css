@@ -1,7 +1,5 @@
-/* 
-Tamaño Escritorio pequeño/tablet
-*/
-@media screen and (min-width: 768px) and (max-width: 991px) {
+/* Escritorio grande */
+@media screen and (min-width: 1200px){
     body {
         background-color: blueviolet;
         margin: 0;
@@ -12,29 +10,26 @@ Tamaño Escritorio pequeño/tablet
         color: white;
         text-shadow: 5px 5px 1px #6441A5;
         text-decoration: none;
+        font-size: xx-large;
       }
       /*Menú Hamburguesa*/
       .logo,
       .content {
         color: #fafafa;
       }
-      
       .nav {
-        width: 100%;
+        width: 50%;
         background-color: #1a1a1a;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        position: sticky;
         top: 0;
         z-index: 3;
       }
-      
       .logo,
       #hamburger {
         margin: 2%;
       }
-      
       #hamburger {
         opacity: 0.5;
         cursor: pointer;
@@ -126,9 +121,9 @@ Tamaño Escritorio pequeño/tablet
           /*Carrito*/
           #cart {
             position: absolute;
-            right: 100px;
-            top: 15px;
-            font-size: x-large;
+            right: 150px;
+            top: 35px;
+            font-size:50px;
             z-index: 9999;
         }
         #cart-content {
@@ -141,17 +136,21 @@ Tamaño Escritorio pequeño/tablet
         .product-list {
             list-style: none; /* Elimina los puntos de la lista */
             padding-left: 0; /* Elimina el padding izquierdo */
-            width: 200px;
+            width: 300px;
+        }
+        .product-list li{
+            border: solid 2px black;
+            font-size: smaller;
         }
         /*Carrito*/
     .container {
         display: grid;
-        margin:0 auto;
+        height: 10%;
     }
     .container_content {
         background-color: #3a3939;
-        margin-left: -1em;
-        width: 49em;
+        width: 100%;
+        margin:0 auto;
     }
     div > img{
         width: 12em;
@@ -159,71 +158,79 @@ Tamaño Escritorio pequeño/tablet
         margin-left: 1.5em;
         margin-top: 0.5em;
     }
-    /*tablet */
-    .products {
-        width: 740px;
+    .products{
+        width: 1366px;
         display: grid;
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-columns: repeat(3, 1fr);
-        gap: 8px;
-        margin-left: 3em;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        gap: 50px;
+        margin-left: 15em;
+    }
+    .products  p{
+        display: grid;
+        margin: auto;
+        font-size: large;
         margin-top: 1em;
+    }
+    .products  div{
+        background-color: white;
+        height: 90%;
+        width: 100%;
+        margin-top: 1em;
+    }
+    .products img{
+        width: 21.1em;
+        height: 15em;
+        display: grid;
+        margin: auto;
+        margin-top: -1em;
+    }
+    .products  button{
+        margin-top: 1em;
+        margin-bottom: 1em;
     }
     .promo{
         width: 99%;
+        display: grid;
+        margin: auto;
         text-align: center;
         background-color: red;
-        font-size: x-large;
-        margin:0 auto;
-        margin-top: -7em;
+        height: 4%;
+        margin-top: 5em;
     }
-    .products > p{
-        margin-top: 1em;
-        margin-left: 7em;
-    }
-    .products > div{
-        background-color: white;
-        height: 100%;
-        width: 90%;
-        margin-top: 5%;
-    }
-    .products > div > img{
-        width: 100%;
-        margin:0 auto;
-    }
-    .products > div > p{
-        margin: auto;
-    }
-    .products > div > button{
-        margin: auto;
-    }
-    .products_promo {
-        width: 740px;
+    .products_promo{
+        width: 1366px;
         display: grid;
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-columns: repeat(3, 1fr);
-        gap: 8px;
-        margin-left: 3em;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        gap: 50px;
+        margin-left: 15em;
+    }
+    .products_promo  p{
+        display: grid;
+        margin: auto;
         margin-top: 1em;
     }
-    .products_promo > p{
-        margin-top: 1em;
-        margin-left: 7em;
-    }
-    .products_promo > div{
+    .products_promo  div{
         background-color: white;
-        height: 100%;
-        width: 90%;
-    }
-    .products_promo > div > img{
+        height: 90%;
         width: 100%;
-        margin:0 auto;
+        margin-top: 2em;
     }
-    .products_promo > div > p{
+    .products_promo img{
+        width: 21.1em;
+        height: 15em;
+        display: grid;
         margin: auto;
+        margin-top: -1em;
     }
-    .products_promo > div > button{
-        margin: auto;
+    .products_promo  button{
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    .products_promo  button a{
+        text-decoration: none;
+        color: black;
     }
     .elements_catalogue {
         list-style: none;
@@ -231,20 +238,21 @@ Tamaño Escritorio pequeño/tablet
         border-style: solid;
         background-color: #333;
         height: 2em;
-        width: 92%;
-        margin-top: 5%;
+        width: 97%;
+        margin-top: 1%;
     }
     .elements_catalogue > li {
-        font-size:medium;
+        margin-left: 39em;
+        font-size:large;
         color: white;
         margin: auto;
     }
     .user_img {
         border-radius: 50%;
-        height: 3em;
-        width: 3em;
-        margin-top: -4em;
-        margin-left: 44em;
+        height: 4em;
+        width: 4em;
+        margin-top: -3em;
+        margin-left: 115em;
         background-image: url(images/pepe.jpeg);
         background-size: cover;
         background-position: center;
@@ -256,62 +264,65 @@ Tamaño Escritorio pequeño/tablet
     }
     .log_out {
         width: 5em;
+        margin-top: -2.5em;
+        margin-left:108em;
     }
     .log_out > a {
         text-decoration: none;
         display: inline-block;
         color: black;
         background-color: white;
-        font-size: small;
-        margin-left:53em;
+        font-size: large;
         width: 5.5em;
+
     }
     .exit {
         width: 5em;
-        margin-top: -3.5em;
-        margin-left: 42em;
+        margin-top: -1em;
+        margin-left: 112em;
     }
     .exit > a {
         text-decoration: none;
         display: inline-block;
-        margin-top: 1em;
         width: 4em;
         color: black;
         background-color: white;
+        font-size: x-large;
     }
     .container_perfil {
-        height: 120%;
         width: 100%;
-        margin-top: 2%;
-        background-color: #6b6a6a;
-    }
-    .container_config {
-        width: 47.96em;
-        display: grid;
-        margin-top: 10em;
+        height: 45em;
+        margin-top: 0.1em;
         background-color: #6b6a6a;
     }
     .user_config {
         display: grid;
-        width: 99.2%;
+        width:99.7%;
         height: 5em;
+        margin: auto;
         background-color: #333;
         color: white;
         text-align: center;
         border-style: solid;
         border-color: black;
+        margin-top: 0.5%;
     }
     .user_config > h1{
-        margin:auto;
+       display: grid;
+       margin: auto;
     }
     .container_passw {
         border-style: solid;
+        margin: 2em;
         width: 19em;
         height: 7em;
         text-align: center;
         margin: auto;
         margin-bottom: 5em;
-        margin-top: -13%;
+        margin-top: 3em;
+    }
+    .passw {
+        margin-left: 2em;
     }
     .container_email {
         border-style: solid;
@@ -321,19 +332,31 @@ Tamaño Escritorio pequeño/tablet
         text-align: center;
         margin: auto;
     }
+    .container_email input:valid{
+        background-color: lightgreen;
+    }
+    .container_email input:invalid{
+        background-color: lightcoral;
+    }
+    .container_email input:placeholder-shown{
+        border: 1px solid #ccc;
+        background-color: transparent;
+    }
     .container_landing {
-        height: 100%;
-        width: 100%;
+        width: 97%;
+        margin: auto;
+        margin-top: 0.5%;
         background-color: #6b6a6a;
     }
     .carousel {
         position: relative;
-        width: 100%;
+        width: 80%;
         overflow: hidden;
+        margin-left: 25em;
     }
     .carousel-inner {
         display: flex;
-        width: 200%;
+        width: 100%;
         height: 100%;
         transition: transform 0.5s ease-in-out;
     }
@@ -377,12 +400,12 @@ Tamaño Escritorio pequeño/tablet
     .notice_products{
         display: grid;
         margin: auto;
-        width: 20em;
-        height:10em;
+        width: 30em;
+        height:20em;
         margin-top: 1em;
         background-image: url(images/recompensa.jpg);
         background-size: cover;
-        margin-left: 1em;
+        margin-left: 5em;
     }
     .notice_products a{
         width: 99%;
@@ -391,19 +414,29 @@ Tamaño Escritorio pequeño/tablet
         margin: auto;
         text-decoration: none;
         color: white;
-        text-align:end;
+        text-align:center;
         font-size: xx-large;
+    }
+    .notice_products > a > p{
+        display: grid;
+        margin: auto;
+        width: 50%;
+        text-align: center;
+        text-transform: uppercase;
+        background-color: white;
+        color: black;
+        margin-top: 8.6em;
     }
     .notice_game{
         display: grid;
         margin: auto;
-        width: 20em;
-        height:10em;
+        width: 30em;
+        height:20em;
         margin-top: 1em;
         background-image: url(images/recompensa.jpg);
         background-size: cover;
-        margin-left: 25em;
-        margin-top: -10em;
+        margin-top: -20em;
+        margin-left: 39em;
     }
     .notice_game a{
         width: 99%;
@@ -415,14 +448,26 @@ Tamaño Escritorio pequeño/tablet
         text-align:end;
         font-size: xx-large;
     }
+    .notice_game > a > p{
+        display: grid;
+        margin: auto;
+        width: 50%;
+        text-align: center;
+        text-transform: uppercase;
+        background-color: white;
+        color: black;
+        margin-top: 8.6em;
+    }
     .notice_updates{
         display: grid;
         margin: auto;
-        width: 20em;
-        height:10em;
+        width: 30em;
+        height:20em;
         margin-top: 1em;
         background-image: url(images/recompensa.jpg);
         background-size: cover;
+        margin-top: -20em;
+        margin-left: 73em;
     }
     .notice_updates a{
         width: 99%;
@@ -431,56 +476,50 @@ Tamaño Escritorio pequeño/tablet
         margin: auto;
         text-decoration: none;
         color: white;
+        text-align:end;
         font-size: xx-large;
-        margin-top: -1%;
+    }
+    .notice_updates > a > p{
+        display: grid;
+        margin: auto;
+        width:80%;
+        text-align: center;
+        text-transform: uppercase;
+        background-color: white;
+        color: black;
+        margin-top: 8.6em;
     }
     .container_login {
         width: 100%;
         background-color: #6b6a6a;
         display: grid;
+
     }
     .container_parameters {
-        height: 50%;
-        width: 50%;
+        height: 100%;
+        width: 20%;
         background: linear-gradient(to bottom, #6b6a6a, #000000);
         display: grid;
         margin: auto;
-        border-style: solid;
-        margin-top: 8em;
+        margin-top: 5em;
         color: white;
       }
-    .imagen {
-        display: grid;
-        margin: auto;
-        height: 45em;
-    }
     .imagen img{
         display: grid;
         margin: auto;
-        height: 35%;
-        margin-top: -15%;
+        height: 50%;
     }
     .user_name {
         display: grid;
         margin: auto;
         text-align: center;
-        margin-top: -34em;
+        margin-top: -15em;
     }
     .user_passwd {
         display: grid;
         margin: auto;
         text-align: center;
-        margin-top: -28em;
-    }
-    .container_email input:valid{
-        background-color: lightgreen;
-    }
-    .container_email input:placeholder-shown{
-        border: 1px solid #ccc;
-        background-color: transparent;
-    }
-    .container_email input:invalid{
-        background-color: lightcoral;
+        margin-top: -30em;
     }
     .container_boton {
         display: grid;
@@ -488,56 +527,53 @@ Tamaño Escritorio pequeño/tablet
         margin-top: -24em;
     }
     footer {
-        width: 100%;
         background-color: #333;
         color: #fff;
+        height: 10em;
         text-align: center;
+        width: 100%;
     }
     .footer-section {
-        flex: 1;
+        display: inline-block;
         margin: 0 10px;
     }
-    
     h3 {
         font-size: 16px;
         margin-bottom: 10px;
     }
-    .other_products{
-        width: 50%;
-        height: 50%;
-        margin:0 auto;
-    }
-    .other_products > h1{
-        text-align: center;
-        color: white;
-    }
-    .other_products > img{
-        width: 100%;
-        height: 50%;
-        margin: auto;
-    }
-    /*Pag prod tablet*/
+    
+    /*Apart prod escritorio*/
     .container_img_prod {
-        width: 100%;
+        width: 99%;
         display: flex;
     }
-    .container_img_prod > img{
+    .container_img_prod img{
         width: 50%;
-        height: 100%;
         margin-top: -0%;
-        margin-left: -1%;
+    }
+    .text_product {
+        background-color: white;
+        text-align: center;
+        font-size: x-large;
+        margin: auto;
+        margin-left: 5%;
+        height: 20%;
     }
     .text_product > p{
-        font-size:1.3rem;
+        margin-top: 5%;
+    }
+    .text_product > .code{
+        margin-top: 5%;
     }
     .text_product > .code > a{
         text-decoration: none;
         width: 50%;
         color: red;
     }
-    .container_rating {
-        margin: auto;
-        margin-left: -71%;
+    .text_product > .container_rating {
+        margin-left: -40%;
+        margin-top: 28%;
+        width: 100%;
     }
     input[type="radio"] {
         display: none;
@@ -548,11 +584,13 @@ Tamaño Escritorio pequeño/tablet
     .clasificacion {
         direction:rtl;
         unicode-bidi: bidi-override;
+        margin-left: -41.2%;
+        margin-top: -10.5%;
         background-color: white;
-        width: 62%;
-        font-size: xx-large;
+        height: 1.5em;
+        width: 14.77em;
         text-align: center;
-        margin-top: -6%;
+        font-size: 50px;
     }
     label:hover,
     label:hover ~ label {
@@ -570,12 +608,11 @@ Tamaño Escritorio pequeño/tablet
     }
     td{
         border: solid;
-        padding: 30px;
+        padding: 50px;
         background-color: wheat;
-        font-size: x-large;
     }
     .other_products{
-        width: 80%;
+        width: 100%;
         height: 50%;
     }
     .other_products > h1{
@@ -583,7 +620,9 @@ Tamaño Escritorio pequeño/tablet
         color: white;
     }
     .other_products > img{
-        width: 100%;
+        width: 50%;
+        height: 50%;
+        display: grid;
         margin: auto;
     }
     .formulario{
@@ -603,6 +642,6 @@ Tamaño Escritorio pequeño/tablet
     }
     .comentarios > p{
         background-color: white;
-        
+
     }
 }

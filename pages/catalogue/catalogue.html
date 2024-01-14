@@ -4,27 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link id="css-cambia" rel="stylesheet" href="../../style.css">
+    <link id="css-cambia" rel="stylesheet" href="../../tablet.css">
+    <link id="css-cambia" rel="stylesheet" href="../../ordenador.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <title>Catalogo</title>
 </head>
 <body>
     <header>
-        <nav class="catalogue_bar">
-            <div>
-                <a href="../../index.html">
-                    <img class="logo"></img>
-                </a>
-                <h1>NotTooLate</h1>
-                <div class="catalogue_log_in">
-                    <a href="../user/login.html">Registrate</a>
-                    <a href="../catalogue/catalogue_logueado.html">Inicia Sesión</a>
-                    <label class="cambiar">
-                        <input id="cambiar-modo" type="checkbox">
-                        <span class="slider">Modo dia</span>
-                    </label>
+        <header>
+            <nav>
+              <div id="overlay">
+                <ul>
+                    <li><a href="#">Inicia Sesión</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Services</a></li>
+                </ul>
+              </div>
+                <div class="nav">
+                  <a href="../../index.html" class="logo">NotTooLate</a>
+                  <div id="cart">🛒
+                    <div id="cart-content" style="display: none;">
+                        <ul class="product-list">
+                            <li>
+                                Producto 1
+                                <p>Precio: 23</p>
+                                <select name="quantity" id="quantity">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                                <span class="delete"><i class="fas fa-trash"></i></span>
+                            </li>
+                        </ul>
+                        <a href="../buy/compra.html"><input type="button" value="Comprar"></a>
+                    </div>
+                </div>                
+                  <div id="hamburger">
+                    <div></div>
+                  </div>
                 </div>
-            </div>
-        </nav>
-    </header>
+            </nav>
+        </header>
     <main>
         <div class="container">
             <ul class="elements_catalogue">
@@ -122,6 +143,8 @@
           <h3>Sobre nosotros</h3>
         </div>
       </footer>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="../../js/burguer.js"></script>
       <script>
         const cambiar = document.getElementById("cambiar-modo");
         const link = document.getElementById("css-cambia");

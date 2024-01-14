@@ -4,24 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link id="css-cambia" rel="stylesheet" href="style.css">
+    <link id="css-cambia" rel="stylesheet" href="tablet.css">
     <title>Catalogo</title>
 </head>
 <body>
   <header>
-    <nav class="catalogue_bar">
-        <div>
-            <a href="index.html">
-                <img class="logo"></img>
-            </a>
-            <h1>NotTooLate</h1>
-            <div class="catalogue_log_in">
-                <a href="pages/user/login.html">Registrate</a>
-                <a href="pages/catalogue/catalogue_logueado.html">Inicia Sesión</a>
-                <label class="cambiar">
-                  <input id="cambiar-modo" type="checkbox">
-                  <span class="slider">Modo dia</span>
-                </label>
-            </div>
+    <nav>
+      <div id="overlay">
+        <ul>
+            <li><a href="#">Inicia Sesión</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Services</a></li>
+        </ul>
+      </div>
+        <div class="nav">
+          <a href="index.html" class="logo"><h1>NotTooLate</h1></a>
+          <div id="hamburger">
+            <div></div>
+          </div>
         </div>
     </nav>
 </header>
@@ -75,6 +76,7 @@
         <h3>Sobre nosotros</h3>
       </div>
     </footer>
+    <script src="js/burguer.js"></script>
     <script>
       const cambiar = document.getElementById("cambiar-modo");
       const link = document.getElementById("css-cambia");
