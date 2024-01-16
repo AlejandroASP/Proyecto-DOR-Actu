@@ -1,0 +1,285 @@
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .product h1{
+        text-align: center;
+        color: white;
+        font-size: xx-large;
+    }
+    .product-list {
+        text-align: center;
+        list-style: none; /* Elimina los puntos de la lista */
+        padding-left: 0; /* Elimina el padding izquierdo */
+        color: white;
+        margin-left: 10%;
+        display: flex;
+        flex-direction: column;
+    }
+    .product-list li{
+        font-size: x-large;
+        width: 300%;
+        border: black 1px solid;
+        margin-top: 10px;
+        background-color: rgb(53, 50, 50);
+    }
+    .product-list li .discount p{
+        margin-top: 10px;
+    }
+    .discount{
+        margin-top: 5px;
+    }
+    .product-list li img{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        position: relative;
+        top: -30px;
+    }
+    #quantity {
+        width: 50px;
+        height: 30px;
+        border-radius: 5px;
+    }
+    .fas.fa-trash {
+        color: red;
+        cursor: pointer;
+        position: relative;
+        display: grid;
+        margin: auto;
+        top: -20px;
+        font-size: xx-large;
+    }
+    .discount-code{
+        text-align: center;
+        color: white;
+        font-size: xx-large;
+        margin-top: 20px;
+    }
+    .discount-code input{
+        width: 15%;
+        font-size: x-large;
+        margin-right: 5px;
+    }
+    .discount-code input[type="button"]{
+        font-size: x-large;
+    }
+    .add{
+        position: relative;
+    }
+    .related{
+        text-align: center;
+        color: white;
+        font-size: xx-large;
+        margin: auto;
+        border: solid black 2px;
+        width: 70%;
+    }
+    .product-related{
+        width: 90%;
+        display: grid;
+        margin: auto;
+    }
+    .product-related h5{
+        text-align: center;
+    }
+    .product-related img{
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        margin-top: -20px;
+    }
+    .total-payment{
+        text-align: center;
+        color: violet;
+        font-size: xx-large;
+    }
+    .button{
+        border-radius: 5px;
+        background-color: white;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        margin-top: -20px;
+    }
+    .button a{
+        text-decoration: none;
+        color: black;
+        width: 100%;
+        font-size: x-large;
+    }
+    .way{
+        text-align: center;
+        margin-top: 20px;
+        font-size:xx-large;
+    }
+    .way a{
+        text-decoration: none;
+        color: violet;
+        text-shadow: black 5px 2px 2px;
+    }
+    .info{
+        width: 90%;
+        margin: auto;
+        border: solid 1px black;
+        box-shadow: black 2px 2px 2px;
+        margin-top: 10px;
+        font-size: x-large;
+        color: white;
+    }
+    .info input{
+        font-size: large;
+    }
+    .info p select{
+        font-size:large;
+    }
+    .info-lastname{
+        margin-top: -54px;
+        margin-left: 320px;
+    }
+
+    .info-country{
+        margin-top: -16%;
+        margin-left: 50%;
+    }
+    .info-country select{
+        width: 300px;
+    }
+    .info-province{
+        margin-top: 4%;
+        margin-left: 50%;
+    }
+    .info-province input{
+        width: 200px;
+    }
+    .info-postal{
+        margin-top: -52px;
+        margin-left: 50%;
+    }
+    .info-postal input{
+        width: 100px;
+    }
+    .button-before{
+        border-radius: 5px;
+        background-color: white;
+        width: 40%;
+        margin-left: 10%;
+        text-align: center;
+        margin-top:20px;
+        box-shadow: black 2px 2px 2px;
+        font-size: x-large;
+    }
+    .button-before a{
+        text-decoration: none;
+        color: black;
+    }
+    .button-after{
+        border-radius: 5px;
+        background-color: white;
+        width: 40%;
+        text-align: center;
+        margin-left:55%;
+        margin-top: -6.4%;
+        box-shadow: black 2px 2px 2px;
+        font-size: x-large;
+    }
+    .button-after a{
+        text-decoration: none;
+        color: black;
+    }
+    .master{
+        border-style: solid;
+        flex-direction:column;
+        display: flex;
+        margin: auto;
+        width: 80%;
+    }
+    .master img{
+        width: 50%;
+    }
+    .master p{
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+    .master .-card-number{
+        width: 20px;
+    }
+    .master p input{
+        width: 40%;
+    }
+    .master .name{
+        margin-top: 20px;
+        width: 50%;
+        font-size: x-large;
+    }
+    .master .name input{
+        font-size: x-large;
+    }
+    .master .last-name{
+        width: 70%;
+        margin-top: -57px;
+        margin-left: 250px;
+        font-size: x-large;
+    }
+    .master .last-name input{
+        font-size: x-large;
+    }
+    .master .card-number{
+        font-size: x-large;
+    }
+    .master .card-number input{
+        font-size: x-large;
+    }
+    .master .expiration{
+        font-size: x-large;
+    }
+    .master .expiration input{
+        font-size: x-large;
+    }
+    .master .security-code{
+        font-size: x-large;
+    }
+    .master .security-code input{
+        font-size: x-large;
+    }
+    .cards div{
+        margin-top: 10px;
+    }
+    .paypal{
+        border-style: solid;
+        flex-direction:column;
+        display: flex;
+        margin: auto;
+        width: 80%;
+    }
+    .paypal img{
+        width: 50%;
+        height: 50%;
+    }
+    .skrill{
+        border-style: solid;
+        flex-direction:column;
+        display: flex;
+        margin: auto;
+        width: 80%;
+        height: 10%;
+    }
+    .skrill img{
+        width: 50%;
+        height: 50%;
+        background-color: white;
+        
+    }
+    .button-payment{
+        border-radius: 5px;
+        background-color: white;
+        width: 40%;
+        margin: 10px;
+        text-align: center;
+        margin-left: 400px;
+        margin-top: -50px;
+        box-shadow: black 2px 2px 2px;
+        font-size: x-large;
+    }
+    .button-payment a{
+        text-decoration: none;
+        color: black;
+    }
+}

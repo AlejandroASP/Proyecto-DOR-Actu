@@ -181,6 +181,9 @@ body{
         top: -15px;
         font-size: x-large;
     }
+    .discount{
+        text-decoration:line-through red 3px;
+    }
     /*Carrito*/
     .catalogue_log_in  a {
         text-decoration: none;

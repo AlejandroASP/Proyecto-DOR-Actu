@@ -7,6 +7,8 @@
     <link id="css-cambia" rel="stylesheet" href="../../tablet.css">
     <link id="css-cambia" rel="stylesheet" href="../../desktop.css">
     <link id="css-cambia" rel="stylesheet" href="../../cartselection.css">
+    <link id="css-cambia" rel="stylesheet" href="../../cartselectiontablet.css">
+    <link id="css-cambia" rel="stylesheet" href="../../cartselectiondesktop.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <title>Catalogo</title>
 </head>
@@ -39,6 +41,13 @@
             <div class="container_content">
                 <section class="product">
                   <div>
+                    <div class="way">
+                      <a href="compra.html">Carrito</a>
+                      /
+                      <a href="shipping-data.html">Datos</a>
+                      /
+                      <a href="payment-method.html">Pago</a>
+                    </div>
                     <h1>Productos que hay en su carrito</h1>
                     <div>
                       <ul class="product-list">
@@ -51,19 +60,20 @@
                         <li>
                             Producto 2
                             <p class="discount">Precio: 23</p>
+                            <p>Precio: 19</p>
                             <img src="../../images/recompensa.jpg" alt="">
                             <span class="delete"><i class="fas fa-trash"></i></span>
                         </li>
                       </ul>
                       <div class="related">
-                        Productos relacionados
+                        <p>Productos relacionados</p>
                         <div class="product-related">
                           <h5>Hola estoy relacionado</h5>
                           <img src="../../images/recompensa.jpg" alt="">
                         </div>
                       </div>
                       <div class="discount-code">
-                        ¿Quiere añadir un código de descuento?
+                        <p>¿Quiere añadir un código de descuento?</p>
                         <input type="text"><input type="button" value="Añadir" class="add">
                       </div>
                       <div class="total-payment">
@@ -90,6 +100,7 @@
         </div>
       </footer>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="../../js/burguer.js"></script>
       <script>
         const cambiar = document.getElementById("cambiar-modo");
         const link = document.getElementById("css-cambia");

@@ -8,6 +8,7 @@
     <link id="css-cambia" rel="stylesheet" href="../../desktop.css">
     <link id="css-cambia" rel="stylesheet" href="../../cartselection.css">
     <link id="css-cambia" rel="stylesheet" href="../../cartselectiontablet.css">
+    <link id="css-cambia" rel="stylesheet" href="../../cartselectiontablet.css">
     <link id="css-cambia" rel="stylesheet" href="../../cartselectiondesktop.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <title>Catalogo</title>
@@ -42,33 +43,34 @@
                 <section class="product">
                   <div>
                     <div class="way">
-                      <a href="compra.html">Carrito</a>
-                      /
-                      <a href="shipping-data.html">Datos</a>
-                      /
-                      <a href="payment-method.html">Pago</a>
-                    </div>
-                    <form>
-                        <div class="info">
-                            <p class="info-name">Nombre: <input type="text" placeholder="Nombre"></p>
-                            <p class="info-lastname">Apellidos: <input type="text" placeholder="Apellidos"></p>
-                            <p class="info-email">email: <input type="email" placeholder="ejemplo@gmail.com"></p>
-                            <p class="info-phone">Teléfono: <input type="tel" placeholder="+99 999 99 99 99"></p>
-                            <p class="info-country">País: <select name="quantity" id="paises">
-                                <option value="1">Ejemplo1</option>
-                                <option value="2">Ejemplo2</option>
-                            </select></p>
-                            <p class="info-province">Provincia: <input type="text" placeholder="mondongo city"></p>
-                            <p class="info-direction">Dirección: <input type="email" placeholder="ejemplo@gmail.com"></p>
-                            <p class="info-postal">Cod Postal: <input type="text" placeholder="38010"></p>
+                        <a href="compra.html">Carrito</a>
+                        /
+                        <a href="shipping-data.html">Datos</a>
+                        /
+                        <a href="payment-method.html">Pago</a>
+                      </div>
+                    <form class="cards">
+                        <div class="master">
+                            <img src="../../images/master.png">
+                            <p class="name">Nombre: <input type="text" placeholder="pepe"></p>
+                            <p class="last-name">Apellidos: <input type="text" placeholder="benavente"></p>
+                            <p class="card-number">Número Tarjeta: <input type="text" placeholder="123456789"></p>
+                            <p class="expiration">Fecha de caducidad: <input type="date"></p>
+                            <p class="security-code">Código de seguridad <input type="text" placeholder="123"></p>
+                        </div>
+                        <div class="paypal">
+                            <img src="../../images/paypal.png">
+                        </div>
+                        <div class="skrill">
+                            <img src="../../images/skrill.png">
                         </div>
                     </form>
                     <div class="button-before">
-                      <a href="compra.html">Página anterior</a>
+                      <a href="shipping-data.html">Página anterior</a>
                     </div>
-                    <div class="button-after">
-                      <a href="payment-method.html">Página Siguiente</a>
-                    </div>
+                    <div class="button-payment">
+                        <a href="compra.html">Comprar</a>
+                      </div>
                   </div>
                 </section>
             </div>

@@ -1,13 +1,14 @@
-
 .product h1{
     text-align: center;
     color: white;
 }
+
 .product-list {
     text-align: center;
     list-style: none; /* Elimina los puntos de la lista */
     padding-left: 0; /* Elimina el padding izquierdo */
     color: white;
+    margin: 25px;
 }
 .product-list li{
     font-size: xx-large;
@@ -16,8 +17,11 @@
     margin-top: 10px;
     background-color: rgb(53, 50, 50);
 }
-.product-list li p{
-    margin-top: 2px;
+.product-list li .discount p{
+    margin-top: 10px;
+}
+.discount{
+    margin-top: 5px;
 }
 .product-list li img{
     width: 100%;
@@ -35,8 +39,8 @@
     color: red;
     cursor: pointer;
     position: relative;
-    display: flex;
-    margin-left: 90%;
+    display: grid;
+    margin: auto;
     top: -20px;
     font-size: xx-large;
 }
@@ -57,8 +61,9 @@
     text-align: center;
     color: white;
     font-size: x-large;
+    margin: auto;
     border: solid black 2px;
-    margin-top: 20px;
+    width: 85%;
 }
 .product-related{
     width: 90%;
@@ -67,7 +72,6 @@
 }
 .product-related h5{
     text-align: center;
-    border: solid black 2px;
 }
 .product-related img{
     width: 100%;
@@ -89,6 +93,122 @@
     margin-top: -20px;
 }
 .button a{
+    text-decoration: none;
+    color: black;
+    width: 100%;
+}
+.way{
+    text-align: center;
+    margin-top: 20px;
+}
+.way a{
+    text-decoration: none;
+    color: violet;
+    text-shadow: black 5px 2px 2px;
+}
+.info{
+    width: 90%;
+    margin: auto;
+    border: solid 1px black;
+    box-shadow: black 2px 2px 2px;
+    margin-top: 10px;
+    color: white;
+}
+.button-before{
+    border-radius: 5px;
+    background-color: white;
+    width: 40%;
+    margin: 20px;
+    text-align: center;
+    margin-top:20px;
+    box-shadow: black 2px 2px 2px;
+}
+.button-before a{
+    text-decoration: none;
+    color: black;
+}
+.button-after{
+    border-radius: 5px;
+    background-color: white;
+    width: 40%;
+    margin: 10px;
+    text-align: center;
+    margin-left: 260px;
+    margin-top: -40px;
+    box-shadow: black 2px 2px 2px;
+}
+.button-after a{
+    text-decoration: none;
+    color: black;
+}
+.master{
+    border-style: solid;
+    flex-direction:column;
+    display: flex;
+    margin: auto;
+    width: 90%;
+}
+.master img{
+    width: 50%;
+    height: 50%;
+}
+.master p{
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.master .-card-number{
+    width: 20px;
+}
+.master p input{
+    width: 40%;
+}
+.master .name{
+    width: 50%;
+}
+.master .last-name{
+    width: 70%;
+    margin-top: -38px;
+    margin-left: 170px;
+}
+.cards div{
+    margin-top: 10px;
+}
+.paypal{
+    border-style: solid;
+    flex-direction:column;
+    display: flex;
+    margin: auto;
+    width: 90%;
+}
+.paypal img{
+    width: 50%;
+    height: 50%;
+}
+.skrill{
+    border-style: solid;
+    flex-direction:column;
+    display: flex;
+    margin: auto;
+    width: 90%;
+    height: 10%;
+}
+.skrill img{
+    width: 50%;
+    height: 50%;
+    background-color: white;
+    
+}
+.button-payment{
+    border-radius: 5px;
+    background-color: white;
+    width: 40%;
+    margin: 10px;
+    text-align: center;
+    margin-left: 260px;
+    margin-top: -40px;
+    box-shadow: black 2px 2px 2px;
+}
+.button-payment a{
     text-decoration: none;
     color: black;
 }
