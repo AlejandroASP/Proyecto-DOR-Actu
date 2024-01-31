@@ -1,12 +1,3 @@
-/*https://codepen.io/fagnanm/pen/RpWNyb*/
-.logotype{
-    font-family: twitchy-tv;
-    color: white;
-    text-shadow: 5px 5px 1px #6441A5;
-    text-decoration: none;
-    display: flex;
-    margin-left: -30%;
-}
 .mode{
     width: 50%;
     height: 100%;
@@ -19,11 +10,10 @@
 }
 .cont{
     display: flex;
-    border: solid 2px black;
     height: 20%;
 }
 .container_img_prod {
-    width: 51.2%;
+    width: 195px;
     display: flex;
 }
 .container_img_prod img{
@@ -42,11 +32,13 @@
 }
 .text_product .code{
     margin-top: 25%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 6px;
 }
 
 .text_product .code a{
     text-decoration: none;
-    color: red;
+    color: white;
 }
 
 .container_rating {
@@ -54,7 +46,7 @@
     width: 300px;
     display: flex;
     align-items:center;
-    margin-left: -118%;
+    margin-left: -120%;
     margin-top: 80%;
 }
 input[type="radio"] {
@@ -70,4 +62,5 @@ label {
     background-color: white;
     text-align: center;
     width: 230px;
+    height: 35px;
 }

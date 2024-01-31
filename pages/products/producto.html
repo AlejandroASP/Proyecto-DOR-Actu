@@ -4,25 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link id="css-cambia" rel="stylesheet" href="../../style.css">
-    <link rel="stylesheet" href="../../producto.css">
+    <link id="css-cambia" rel="stylesheet" href="../../ordenador.css">
+    <link id="css-cambia" rel="stylesheet" href="../../tablet.css">
+    <link id="css-cambia" rel="stylesheet" href="../../producto.css">
     <title>Catalogo</title>
 </head>
 <body>
     <header>
-        <nav class="catalogue_bar">
-            <div>
-            <div class="nav">
-              <a href="hambur.html" class="logotype">NotTooLate</a>
-              <div id="hamburger">
-                <div></div>
-              </div>
-            <div class="mode">
-                <label class="cambiar">
-                    <input id="cambiar-modo" type="checkbox">
-                    <span class="slider">Modo dia</span>
-                </label>
+        <nav>
+            <div id="overlay">
+              <ul>
+                  <li><a href="#">Inicia Sesión</a></li>
+                  <li><a href="pages/about/about_us.html">About</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Services</a></li>
+              </ul>
             </div>
-        </nav>
+              <div class="nav">
+                <a href="../../index.html" class="logo"><h1>NotTooLate</h1></a>
+                <div id="hamburger">
+                  <div></div>
+                </div>
+              </div>
+          </nav>
     </header>
     <main>
         <div class="container">
@@ -33,7 +37,7 @@
             <div class="container_content">
                 <div class="cont">
                     <div class="container_img_prod">
-                        <img src="../../images/recompensa.jpg">
+                        <img src="../../images/recompensa.jpg" alt="recompensa">
                             <div class="container_rating">
                                 <p class="clasificacion">
                                   <input id="radio1" type="radio" name="estrellas" value="5"><!--
@@ -73,15 +77,14 @@
                 </div>
                 <div class="other_products">
                     <h1>Otros Productos</h1>
-                    <img src="../../images/recompensa.jpg" alt="">
+                    <img src="../../images/recompensa.jpg" alt="recompensa">
                     <div class="comentarios">
                         <h1>Comentarios</h1>
                         <p>Usuario: soy un comentario</p>
                     </div>
-                    
+                    <h1>Formulario de dudas</h1>
                     <form action="" class="formulario">
-                        <h1>Formulario de dudas</h1>
-                        <textarea name="" id="" cols="10" rows="10"></textarea>
+                        <textarea name="" id="" cols="10" rows="10" title="questions"></textarea>
                         <button type="submit">Enviar</button>
                     </form>
                 </div>
@@ -101,6 +104,7 @@
           <h3>Sobre nosotros</h3>
         </div>
       </footer>
+      <script src="../../js/burguer.js"></script>
       <script>
         const cambiar = document.getElementById("cambiar-modo");
         const link = document.getElementById("css-cambia");

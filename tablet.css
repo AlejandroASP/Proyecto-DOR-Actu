@@ -148,6 +148,7 @@ Tamaño Escritorio pequeño/tablet
     .container {
         display: grid;
         margin:0 auto;
+        margin-top: 20px;
     }
     .container_content {
         background-color: #3a3939;
