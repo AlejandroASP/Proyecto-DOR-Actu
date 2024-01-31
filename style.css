@@ -198,13 +198,20 @@ body{
     .container{
         display: grid;
         margin: auto;
+        margin-top: 10px;
     }
         /*telefono */
     .container_content {
         background-color: #3a3939;
         width: 94%;
         margin:0 auto;
-        margin-left: 0.5em;
+    }
+    .container_content_us{
+        background-color: #3a3939;
+        width: 94%;
+        margin:0 auto;
+        color: white;
+        text-align: center;
     }
     .products {
         width: 325px;
