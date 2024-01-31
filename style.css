@@ -17,10 +17,11 @@ body{
     font-family: "Rigtheous";
 }
 .logo{
-    font-family: twitchy-tv;
-    color: white;
-    text-shadow: 5px 5px 1px #6441A5;
-    text-decoration: none;
+        font-family: twitchy-tv;
+        color: white;
+        text-shadow: 3px 4px 1px #6441A5;
+        text-decoration: none;
+        font-size: x-small;
     }
     /*Menú Hamburguesa*/
     .logo,
@@ -29,14 +30,14 @@ body{
     }
     
     .nav {
-    width: 100%;
-    background-color: #1a1a1a;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 3;
+        width: 100%;
+        background-color: #1a1a1a;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 3;
     }
     
     .logo,
@@ -95,17 +96,17 @@ body{
     }
     
     #overlay {
-    position: fixed;
-    width: 100%;
-    min-height: 100%;
-    background-color: #1a1a1a;
-    z-index: 1;
-    transform: translateY(-100%);
-    transition: all 0.5s ease-in-out;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+        position: fixed;
+        width: 100%;
+        min-height: 100%;
+        background-color: #1a1a1a;
+        z-index: 1;
+        transform: translateY(-100%);
+        transition: all 0.5s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     
     #overlay.menu {

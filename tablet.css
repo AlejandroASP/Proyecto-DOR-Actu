@@ -8,10 +8,11 @@ Tamaño Escritorio pequeño/tablet
         padding: 0;
     }
     .logo{
-        font-family: twitchy-tv;
-        color: white;
-        text-shadow: 5px 5px 1px #6441A5;
-        text-decoration: none;
+            font-family: twitchy-tv;
+            color: white;
+            text-shadow: 5px 5px 1px #6441A5;
+            text-decoration: none;
+            font-size: medium;
       }
       /*Menú Hamburguesa*/
       .logo,
